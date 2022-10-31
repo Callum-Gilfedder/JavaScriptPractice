@@ -15,16 +15,21 @@
             <ul class="test">Hello </ul>
             <ul class="test">World</ul>
         </li>
+        <button id = "button1">
+            Hello
+        </button>
 
         <script>
-            // create elements method
-            const const1 = document.getElementById("id1").innerText;
-            console.log(const1)
-            if(const1=="Hello world"){
-                console.log("True")
-            } else {
-                console.log("False")
+            // working with event listeners
+            var button1 = document.getElementById("button1");
+
+            function alter_color() {
+                button1.style.backgroundColor = "green";
             }
+
+            button1.addEventListener("click", alter_color);
+            
+
             
         </script>
     </div>
